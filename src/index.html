@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- USE A MOBILE APPROPRIATE VIEWPORT SETTING SO THE UI APPEARS THE RIGHT SIZE -->
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,minimal-ui, initial-scale=1.0"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .buttons {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 2px;
+      }
+      canvas {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+
+    <title>Joking Face</title>
+  </head>
+
+  <body>
+    <!-- <div class="buttons">
+      <a id="horn_1">Horn-1</a>
+      <a id="horn_2">Horn-2</a>
+      <a id="horn_3">Horn-3</a>
+      <a id="mask_1">Mask-1</a>
+      <a id="mask_2">Mask-2</a>
+      <a id="helmet_1">Helmet-1</a>
+      <a id="helmet_2">Helmet-2</a>
+      <a id="helmet_3">Helmet-3</a>
+    </div> -->
+
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">
+          Horn
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a id="horn_1">Horn-1</a>
+          <a id="horn_2">Horn-2</a>
+          <a id="horn_3">Horn-3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Mask
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a id="mask_1">Mask-1</a>
+          <a id="mask_2">Mask-2</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">
+          Helmet
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a id="helmet_1">Helmet-1</a>
+          <a id="helmet_2">Helmet-2</a>
+          <a id="helmet_3">Helmet-3</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
